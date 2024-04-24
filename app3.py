@@ -8,16 +8,18 @@ def main():
 
     # 프린트함수는 디버깅용
     print(df)
-    
-    st.dataframe(df)
+
+    st.dataframe( df )
 
     # species 컬럼의 유니크 값을 화면에 표시
 
-    print(df['species'])
+    print(df['species'].unique())
 
-    st.write(df['species'])
+    st.write(df['species'].unique())
 
-    st.text(' 아이리스 꽃은 ' + df['species'].unique() + '로 되어있다.')
+    st.text( '아이리스 꽃은 ' + df['species'].unique() +'로 되어있다.' )
 
-if __name__ == '__main__':
+
+
+if __name__ == '__main__' :
     main()
